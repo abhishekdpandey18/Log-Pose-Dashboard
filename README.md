@@ -1,4 +1,4 @@
-# 🌍 Log Pose Dashboard
+# 🌍 Log-Pose-Dashboard
 *A customizable personal workspace inspired by the navigation concept from One Piece's "Log Pose".*
 
 Transform your browser into a fully personalized productivity dashboard with draggable widgets, persistent layouts, productivity tools, and stunning glassmorphism visuals.
