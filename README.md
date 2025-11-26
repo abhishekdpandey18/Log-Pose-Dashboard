@@ -1,68 +1,96 @@
-# 🧭 Log Pose Dashboard
-A highly customizable, modular productivity dashboard inspired by **One Piece's Log Pose** — built with **Vanilla JavaScript**, **CSS Grid**, and **LocalStorage**, featuring drag-and-drop widgets, glassmorphism UI, and complete offline persistence.
+# 🌍 Log Pose Dashboard
+*A customizable personal workspace inspired by the navigation concept from One Piece's "Log Pose".*
+
+Transform your browser into a fully personalized productivity dashboard with draggable widgets, persistent layouts, productivity tools, and stunning glassmorphism visuals.
+
+---
+
+## 🚀 Live Demo
+🔗 *Coming Soon / Add Link Here*
 
 ---
 
 ## ✨ Features
 
-### 🎛️ Interactive Grid System
-- 16×9 responsive layout
-- Drag & drop widgets
-- Resizable elements
-- Smart collision detection
-- Lock mode (prevent movement)
+### 🧩 Grid & Layout
+- Responsive **16×9 drag & drop grid**
+- Freely movable widgets
+- Snap-to-grid positioning
+- **Resizable widgets** with handles
+- **Collision detection** preventing overlap
+- **Widget Locking** to freeze the layout
 
-### 🧩 Productivity Widgets
-- Pomodoro focus timer (SVG)
-- To-Do & Notes
-- Finance Tracker (Income/Expense)
-- Calendar with today highlight
-- Bookmarks with auto-favicons
-- Dynamic quotes
-- Flip clock
-- Search bar
+### 💾 Persistence
+- Full **LocalStorage save system**
+- Automatically remembers:
+  - Layout positions
+  - Widget sizes
+  - User settings
+  - Data (tasks, notes, finance)
 
-### 🎨 Personalization
-- Backgrounds (colors / gradients / images)
-- Typography controls
+### 🧠 Productivity Tools
+- 🎯 **Focus Timer** (Pomodoro-style)
+  - Circular UI
+  - Custom focus/break durations
+  - Audio alerts
+  - Progress tracking
+
+- ✅ **To-Do List**
+  - Add / check / delete tasks
+  - Persistent task storage
+
+- 📝 **Expandable Notes**
+  - Multiple notes with titles
+  - Expand/collapse content
+  - Editable & deletable
+
+### 💰 Finance Tracker
+- Track income and expenses
+- Categorize transactions
+- Real-time balance calculation
+- All data saved locally
+
+### 🗓 Smart Widgets
+- 📅 Dynamic Calendar (auto-generates month)
+- 🕒 Retro Flip Clock (animated)
+- 🧑‍💼 Profile Card (avatar, name, role, status)
+- 🔖 Visual Bookmarks (auto-fetched favicons)
+
+### ⚡ Quick Access
+- 🚀 Quick Launch Docks (side + bottom)
+- 🔍 Smart Search bar (Google routing)
+
+### 🎨 Visual Design
+- 🌫 Glassmorphism UI
+- Neon glow accents
+- Responsive layout
+- Custom wallpapers:
+  - Image upload
+  - URL backgrounds
+  - Solid / gradient color modes
+
+### 🔁 Backup & Sync
+- 📦 JSON Import/Export
+- Transfer dashboard to any device instantly
+
+### ⚙️ Global Settings Panel
+- Font size controls
 - Widget visibility toggles
-- Profile: name, title, status, avatar
-- Import / Export `.json`
-
-### 💾 Data Persistence
-Everything is saved locally:
-- Layout positions
-- Widget data
-- Settings
-- Backgrounds
-
-> No backend required. 100% offline.
+- Color customization
+- Data management options
 
 ---
 
-## 🖥️ UI Style: Glassmorphism
-A modern frosted-glass aesthetic using:
-
-background: rgba(36, 36, 62, 0.8);
-backdrop-filter: blur(10px);
-
-
-Dark theme + neon accents for a cyber look.
+## 🛠 Tech Stack
+- HTML
+- CSS (Glassmorphism + animations)
+- JavaScript (ES6+)
+- LocalStorage API
 
 ---
 
-## 🧱 Tech Stack
-- Vanilla JavaScript
-- HTML5 + CSS Grid
-- LocalStorage
-- SVG Animations
-- CSS clamp() typography
-
----
-
-## 🚀 Getting Started
+## 📥 Installation
 
 ```bash
-git clone https://github.com/<username>/log-pose.git
-cd log-pose
-open index.html
+git clone https://github.com/yourusername/log-pose-dashboard.git
+cd log-pose-dashboard
