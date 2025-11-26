@@ -1,52 +1,68 @@
-# 
-# 🚀 [Project Name] - Log-Pose-Dashboard
+# 🧭 Log Pose Dashboard
+A highly customizable, modular productivity dashboard inspired by **One Piece's Log Pose** — built with **Vanilla JavaScript**, **CSS Grid**, and **LocalStorage**, featuring drag-and-drop widgets, glassmorphism UI, and complete offline persistence.
 
-> A single-file, privacy-first, and fully customizable browser start page built with Vanilla JS.
+---
 
-![Project Screenshot](path/to/your/screenshot.png)
 ## ✨ Features
 
-### 🖥️ Core Experience
-- **Drag & Drop Grid:** A responsive 16x9 grid system inspired by desktop environments. Move and resize widgets freely.
-- **Glassmorphism UI:** Modern, frosted-glass aesthetic that adapts to your wallpaper.
-- **Zero Dependencies:** Pure HTML, CSS, and JavaScript. No frameworks, no build process.
+### 🎛️ Interactive Grid System
+- 16×9 responsive layout
+- Drag & drop widgets
+- Resizable elements
+- Smart collision detection
+- Lock mode (prevent movement)
 
-### 🛠️ Widget Suite
-| Category | Widgets Included |
-|----------|------------------|
-| **Productivity** | Focus Timer (Pomodoro), To-Do List, Expandable Notes |
-| **Finance** | Expense/Income Tracker with category management |
-| **Info** | Retro Flip Clock, Dynamic Calendar, Quote of the Day |
-| **Navigation** | Search Bar, Bookmark Manager, Quick-Launch Docks |
+### 🧩 Productivity Widgets
+- Pomodoro focus timer (SVG)
+- To-Do & Notes
+- Finance Tracker (Income/Expense)
+- Calendar with today highlight
+- Bookmarks with auto-favicons
+- Dynamic quotes
+- Flip clock
+- Search bar
 
-### 🔒 Privacy & Data
-- **LocalStorage Powered:** No database required. All your tasks, notes, and settings live in your browser.
-- **Import/Export:** Backup your entire dashboard configuration to a JSON file.
+### 🎨 Personalization
+- Backgrounds (colors / gradients / images)
+- Typography controls
+- Widget visibility toggles
+- Profile: name, title, status, avatar
+- Import / Export `.json`
+
+### 💾 Data Persistence
+Everything is saved locally:
+- Layout positions
+- Widget data
+- Settings
+- Backgrounds
+
+> No backend required. 100% offline.
+
+---
+
+## 🖥️ UI Style: Glassmorphism
+A modern frosted-glass aesthetic using:
+
+background: rgba(36, 36, 62, 0.8);
+backdrop-filter: blur(10px);
+
+
+Dark theme + neon accents for a cyber look.
+
+---
+
+## 🧱 Tech Stack
+- Vanilla JavaScript
+- HTML5 + CSS Grid
+- LocalStorage
+- SVG Animations
+- CSS clamp() typography
+
+---
 
 ## 🚀 Getting Started
 
-No installation required!
-
-1. Clone this repository or download the `.zip`.
-2. Open `index.html` in any modern web browser.
-3. **Optional:** Set it as your browser's "New Tab" page using extensions like "New Tab Redirect".
-
-## ⚙️ Customization
-
-Click the **Settings Gear** in the top right to:
-- Change wallpapers (URL or Upload).
-- Toggle Solid/Gradient backgrounds.
-- Adjust font sizes.
-- Hide/Show specific widgets.
-- Edit your Profile Card details.
-
-## 🛠️ Built With
-- **HTML5** (Structure)
-- **CSS3** (Grid Layouts, Glassmorphism, Animations)
-- **Vanilla JavaScript** (State Management, Drag & Drop Logic, DOM Manipulation)
-
-## 🤝 Contributing
-Feel free to fork this project and add your own widgets! Pull requests are welcome.
-
-## 📄 License
-This project is licensed under the MIT License.
+```bash
+git clone https://github.com/<username>/log-pose.git
+cd log-pose
+open index.html
