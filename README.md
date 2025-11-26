@@ -92,5 +92,5 @@ Transform your browser into a fully personalized productivity dashboard with dra
 ## 📥 Installation
 
 ```bash
-[git clone https://github.com/yourusername/log-pose-dashboard.git](https://github.com/abhishekdpandey18/Log-Pose-Dashboard)
+https://github.com/abhishekdpandey18/Log-Pose-Dashboard
 cd Log-Pose-Dashboard
