@@ -140,8 +140,6 @@ Since this project requires **no backend**, installation is instant.
 
 <a href="https://github.com/abhishekdpandey18/Log-Pose-Dashboard/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=abhishekdpandey18/Log-Pose-Dashboard" />
-    <img src="https://contrib.rocks/image?repo=abhishekdpandey18/Log-Pose-Dashboard" />
-    <img src="https://contrib.rocks/image?repo=chikujaurasiya/Log-Pose-Dashboard" />
 </a>
 
 ----
@@ -149,6 +147,7 @@ Since this project requires **no backend**, installation is instant.
 <p align="center">
   Made with ❤️ for productivity enthusiasts.
 </p>
+
 
 
 
