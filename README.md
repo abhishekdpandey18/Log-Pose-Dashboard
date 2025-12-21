@@ -3,6 +3,7 @@
 </p>
 
 ```
+
 # 🧭 Log-Pose-Dashboard
 
 
@@ -142,6 +143,7 @@ Since this project requires **no backend**, installation is instant.
 <p align="center">
   Made with ❤️ for productivity enthusiasts.
 </p>
+
 
 
 
