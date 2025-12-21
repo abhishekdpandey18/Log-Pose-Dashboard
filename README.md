@@ -100,13 +100,6 @@ Since this project requires **no backend**, installation is instant.
     ├── pom.xml
     │
     └── README.md
-
-
-
-
-    
-
-
     ```
 
 3.  **Run It**:
@@ -139,6 +132,7 @@ Since this project requires **no backend**, installation is instant.
 <p align="center">
   Made with ❤️ for productivity enthusiasts.
 </p>
+
 
 
 
