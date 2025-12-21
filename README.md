@@ -138,12 +138,19 @@ Since this project requires **no backend**, installation is instant.
 
 ## 🛠️ Technologies Used
 
-* **Core:** Semantic HTML5, CSS3 (Variables & Grid), Vanilla JavaScript (ES6+).
-* **Styling:** Custom CSS (Dashboard) & Tailwind CSS (Habit Tracker).
-* **Libraries:** * [Chart.js](https://www.chartjs.org/) (Analytics)
-    * [FontAwesome](https://fontawesome.com/) (Icons)
-    * [Google Fonts](https://fonts.google.com/) (Inter & Segoe UI)
-* **Storage:** Browser `localStorage` API.
+**Frontend**
+* **HTML5, CSS3 & JavaScript (ES6+):** Core structure, styling, and grid logic.
+* **Tailwind CSS:** Styling framework for the Habit Tracker module.
+* **Chart.js:** Data visualization for habit analytics.
+
+**Backend**
+* **Java 17 & Spring Boot 3.2:** Main application framework.
+* **Jakarta EE Servlet API:** Implemented raw Servlets (`/simple-servlet`) for low-level request handling.
+* **Maven:** Dependency management and build automation.
+
+**Data & Tools**
+* **LocalStorage API:** Client-side data persistence.
+* **External APIs:** Integration with DummyJSON (Quotes) and Unsplash (Images).
 
 ---
 ### 👨‍💻 Contributors
@@ -161,6 +168,7 @@ Since this project requires **no backend**, installation is instant.
 <p align="center">
   Made with ❤️ for productivity enthusiasts.
 </p>
+
 
 
 
