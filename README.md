@@ -21,18 +21,16 @@
 ## 📸 Visual Tour
 
 ### The Dashboard
-| **Your Command Center** | **Deep Customization** |
-|:---:|:---:|
-| ![Dashboard Overview](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img2.png) | ![Settings Panel](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img3.png) |
-| *A 16x9 grid system with draggable, resizable widgets for notes, finance, and focus.* | *Customize gradients, wallpapers, fonts, and toggle widget visibility.* |
 
-### The HabitMatrix
-| **Track Every Detail** | **Visualize Progress** |
-|:---:|:---:|
-| ![Habit Tracker UI](imgs/img3.jpg) | ![Analytics View](imgs/img4.jpg) |
-| *Resizable sidebar, monthly events, and a detailed daily habit grid.* | *Chart.js powered insights, completion rates, and streak tracking.* |
+| **Your Command Center** | 
+| :--- |
+| ![Dashboard Overview](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img2.png) |
+| *A 16x9 grid system with draggable, resizable widgets for notes, finance, and focus.* |
 
----
+|**Deep Customization** | Settings Menu | Settings Menu |
+| :--- | :--- | :--- |
+| ![16x9 grid movement ](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img3.png) | ![Analytics View](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img11.png) | ![Analytics View](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img12.png) |
+| *Users can freely drag, drop, and resize widgets on a dynamic grid with automatic collision detection.* | *Users can individually toggle the visibility of any widget via the settings menu to customize their workspace.* |*The system allows users to export their complete dashboard configuration and data to a JSON file for backup or transfer, and restore it seamlessly via an import function.* |
 
 ## 🌟 Module 1: Interactive Dashboard
 The **Dashboard** acts as your browser homepage or "Web OS". It is built on a responsive 16x9 grid system.
@@ -45,6 +43,14 @@ The **Dashboard** acts as your browser homepage or "Web OS". It is built on a re
 | **💾 Data Persistence** | Uses `localStorage` to automatically save your layout, colors, notes, and tasks. Close the browser and everything is there when you return. |
 | **🎨 Theme Engine** | Switch between Solid Colors, **Linear Gradients**, or use a custom Image URL/Upload as your background. |
 | **📥 JSON Import/Export** | Backup your entire configuration to a `.json` file and restore it on another device instantly. |
+
+---
+
+### The HabitMatrix
+| **Track Every Detail** | **Visualize Progress** |
+|:---:|:---:|
+| ![Habit Tracker UI](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/hab3.png) | ![Analytics View](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/hab4.png) |
+| *Resizable sidebar, monthly events, and a detailed daily habit grid.* | *Chart.js powered insights, completion rates, and streak tracking.* |
 
 ---
 
@@ -143,6 +149,16 @@ Since this project requires **no backend**, installation is instant.
 <p align="center">
   Made with ❤️ for productivity enthusiasts.
 </p>
+
+
+
+
+
+
+
+
+
+
 
 
 
