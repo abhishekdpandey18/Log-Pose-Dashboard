@@ -1,3 +1,9 @@
+<p align="center">
+    <img src="https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img8.png" width="250"/>
+</p>
+
+---
+
 # 🧭 Log-Pose-Dashboard
 
 
@@ -17,7 +23,7 @@
 ### The Dashboard
 | **Your Command Center** | **Deep Customization** |
 |:---:|:---:|
-| ![Dashboard Overview](imgs/img1.jpg) | ![Settings Panel](imgs/img2.jpg) |
+| ![Dashboard Overview](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img2.png) | ![Settings Panel](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img3.png) |
 | *A 16x9 grid system with draggable, resizable widgets for notes, finance, and focus.* | *Customize gradients, wallpapers, fonts, and toggle widget visibility.* |
 
 ### The HabitMatrix
@@ -137,6 +143,14 @@ Since this project requires **no backend**, installation is instant.
 <p align="center">
   Made with ❤️ for productivity enthusiasts.
 </p>
+
+
+
+
+
+
+
+
 
 
 
