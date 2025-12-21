@@ -1,5 +1,6 @@
 <p align="center">
     <img src="https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img8.png" width="250"/>
+```
 # 🧭 Log-Pose-Dashboard
 
 
@@ -139,6 +140,7 @@ Since this project requires **no backend**, installation is instant.
 <p align="center">
   Made with ❤️ for productivity enthusiasts.
 </p>
+
 
 
 
