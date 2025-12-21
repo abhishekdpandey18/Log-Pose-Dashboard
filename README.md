@@ -106,9 +106,10 @@ Since this project requires **no backend**, installation is instant.
     │       │           └── dashboard/
     │       │               ├── controller/
     │       │               │   └── PageController.java
+    |       │               │   └── QuoteController.java
     │       │               │
     │       │               ├── servlet/
-    │       │               │   └── (Servlet classes)
+    │       │               │   └── HelloServlet.java
     │       │               │
     │       │               └── DashboardApplication.java
     │       │
@@ -168,6 +169,7 @@ Since this project requires **no backend**, installation is instant.
 <p align="center">
   Made with ❤️ for productivity enthusiasts.
 </p>
+
 
 
 
