@@ -23,6 +23,7 @@
 ### The Dashboard
 
 | **Your Command Center** | 
+| :--- |
 | ![Dashboard Overview](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img2.png) |
 | *A 16x9 grid system with draggable, resizable widgets for notes, finance, and focus.* |
 
@@ -148,6 +149,7 @@ Since this project requires **no backend**, installation is instant.
 <p align="center">
   Made with ❤️ for productivity enthusiasts.
 </p>
+
 
 
 
