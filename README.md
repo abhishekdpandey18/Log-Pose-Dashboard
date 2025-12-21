@@ -29,7 +29,7 @@
 
 |**Deep Customization** | Settings Menu | Settings Menu |
 | :--- | :--- | :--- |
-| ![16x9 grid movement ](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img3.png) | ![Analytics View](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img11.png) | ![Analytics View](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img12.png) |
+| ![16x9 grid movement ](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img3.png) | ![Analytics View](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img11-Copy.png) | ![Analytics View](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img12-Copy.png) |
 | *Users can freely drag, drop, and resize widgets on a dynamic grid with automatic collision detection.* | *Users can individually toggle the visibility of any widget via the settings menu to customize their workspace.* |*The system allows users to export their complete dashboard configuration and data to a JSON file for backup or transfer, and restore it seamlessly via an import function.* |
 
 ## 🌟 Module 1: Interactive Dashboard
@@ -149,6 +149,7 @@ Since this project requires **no backend**, installation is instant.
 <p align="center">
   Made with ❤️ for productivity enthusiasts.
 </p>
+
 
 
 
