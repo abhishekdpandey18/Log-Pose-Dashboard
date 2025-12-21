@@ -124,9 +124,12 @@ Since this project requires **no backend**, installation is instant.
 
 - [**Abhishek Pandey**](https://github.com/abhishekdpandey18) – Project Author & Documentation Writer
 - [**Abhyudaya Singh**](https://github.com/abhyudayasingh18) – Logic Developer
+- [**Deepanshu**](https://github.com/chikujaurasiya) – java Logic and Servlet
 
 <a href="https://github.com/abhishekdpandey18/Log-Pose-Dashboard/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=abhishekdpandey18/Log-Pose-Dashboard" />
+    <img src="https://contrib.rocks/image?repo=abhishekdpandey18/Log-Pose-Dashboard" />
+    <img src="https://contrib.rocks/image?repo=abhishekdpandey18/Log-Pose-Dashboard" />
 </a>
 
 ----
@@ -134,6 +137,7 @@ Since this project requires **no backend**, installation is instant.
 <p align="center">
   Made with ❤️ for productivity enthusiasts.
 </p>
+
 
 
 
