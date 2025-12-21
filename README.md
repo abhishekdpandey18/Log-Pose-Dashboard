@@ -68,12 +68,6 @@ Accessible via the "Habit" widget on the Dashboard, this is a dedicated applicat
 
 ---
 
-## 📸 Project Screenshots
-
-![Dashboard Preview](imgs/img.png)
-
----
-
 ## 🔗 Module Integration
 
 The project consists of two distinct modules that work seamlessly together:
@@ -167,6 +161,7 @@ Since this project requires **no backend**, installation is instant.
 <p align="center">
   Made with ❤️ for productivity enthusiasts.
 </p>
+
 
 
 
