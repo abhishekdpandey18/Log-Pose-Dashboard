@@ -27,10 +27,10 @@
 | ![Dashboard Overview](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img2.png) |
 | *A 16x9 grid system with draggable, resizable widgets for notes, finance, and focus.* |
 
-|**Deep Customization** | Settings Menu | Settings Menu |
+|**Deep Customization** |   Settings Menu    | Settings Import/Export |
 | :--- | :--- | :--- |
-| ![16x9 grid movement ](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img3.png) | ![Analytics View](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img11-Copy.png) | ![Analytics View](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img12-Copy.png) |
-| *Users can freely drag, drop, and resize widgets on a dynamic grid with automatic collision detection.* | *Users can individually toggle the visibility of any widget via the settings menu to customize their workspace.* |*The system allows users to export their complete dashboard configuration and data to a JSON file for backup or transfer, and restore it seamlessly via an import function.* |
+| ![16x9 grid movement ](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img3.png) | ![Analytics View](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img11.png) | ![Analytics View](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img12.png) |
+| *Users can freely drag, drop, and resize widgets on a dynamic grid with automatic collision detection.* | *Users can individually toggle the visibility of any widget via the settings menu to customize their workspace.* |*Users can backup and restore their entire dashboard configuration and data using JSON file import and export.* |
 
 ## 🌟 Module 1: Interactive Dashboard
 The **Dashboard** acts as your browser homepage or "Web OS". It is built on a responsive 16x9 grid system.
@@ -140,8 +140,6 @@ Since this project requires **no backend**, installation is instant.
 
 <a href="https://github.com/abhishekdpandey18/Log-Pose-Dashboard/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=abhishekdpandey18/Log-Pose-Dashboard" />
-    <img src="https://contrib.rocks/image?repo=abhishekdpandey18/Log-Pose-Dashboard" />
-    <img src="https://contrib.rocks/image?repo=chikujaurasiya/Log-Pose-Dashboard" />
 </a>
 
 ----
@@ -149,6 +147,9 @@ Since this project requires **no backend**, installation is instant.
 <p align="center">
   Made with ❤️ for productivity enthusiasts.
 </p>
+
+
+
 
 
 
