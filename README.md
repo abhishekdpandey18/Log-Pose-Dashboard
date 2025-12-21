@@ -26,6 +26,20 @@
 | ![Dashboard Overview](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img2.png) | ![Settings Panel](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img3.png) |
 | *A 16x9 grid system with draggable, resizable widgets for notes, finance, and focus.* | *Customize gradients, wallpapers, fonts, and toggle widget visibility.* |
 
+## 🌟 Module 1: Interactive Dashboard
+The **Dashboard** acts as your browser homepage or "Web OS". It is built on a responsive 16x9 grid system.
+
+### ✨ Key Features
+| Feature Block | Description |
+| :--- | :--- |
+| **🎨 Grid System** | A fully interactive **Draggable & Resizable** grid. Move widgets anywhere, resize them using the bottom-right handle, or lock the grid to prevent changes. |
+| **🛠 Widget Suite** | Includes **12+ Native Widgets**: Clock (Flip-style), To-Do List, Notes, Finance Tracker, Bookmarks, Focus Timer (Pomodoro), Calendar, and more. |
+| **💾 Data Persistence** | Uses `localStorage` to automatically save your layout, colors, notes, and tasks. Close the browser and everything is there when you return. |
+| **🎨 Theme Engine** | Switch between Solid Colors, **Linear Gradients**, or use a custom Image URL/Upload as your background. |
+| **📥 JSON Import/Export** | Backup your entire configuration to a `.json` file and restore it on another device instantly. |
+
+---
+
 ### The HabitMatrix
 | **Track Every Detail** | **Visualize Progress** |
 |:---:|:---:|
@@ -143,6 +157,7 @@ Since this project requires **no backend**, installation is instant.
 <p align="center">
   Made with ❤️ for productivity enthusiasts.
 </p>
+
 
 
 
