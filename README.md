@@ -29,7 +29,7 @@
 ### The HabitMatrix
 | **Track Every Detail** | **Visualize Progress** |
 |:---:|:---:|
-| ![Habit Tracker UI](imgs/img3.jpg) | ![Analytics View](imgs/img4.jpg) |
+| ![Habit Tracker UI](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/hab3.png) | ![Analytics View](imgs/img4.jpg) |
 | *Resizable sidebar, monthly events, and a detailed daily habit grid.* | *Chart.js powered insights, completion rates, and streak tracking.* |
 
 ---
@@ -143,6 +143,7 @@ Since this project requires **no backend**, installation is instant.
 <p align="center">
   Made with ❤️ for productivity enthusiasts.
 </p>
+
 
 
 
