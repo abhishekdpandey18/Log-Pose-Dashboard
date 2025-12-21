@@ -66,11 +66,47 @@ Since this project requires **no backend**, installation is instant.
 2.  **File Structure Check**:
     Ensure your folder looks like this for the integration to work:
     ```text
-    /Root Folder
-    ├── index.html           # The Dashboard (Main Entry)
-    ├── habit_tracker.html   # The Habit Tracker (Linked via Widget)
-    ├── imgs/                # Folder for screenshots
+    /Log-Pose-Dashboard/
+    |
+    ├── .idea/
+    │
+    ├── src/
+    │   └── main/
+    │       ├── java/
+    │       │   └── com/
+    │       │       └── project/
+    │       │           └── dashboard/
+    │       │               ├── controller/
+    │       │               │   └── PageController.java
+    │       │               │
+    │       │               ├── servlet/
+    │       │               │   └── (Servlet classes)
+    │       │               │
+    │       │               └── DashboardApplication.java
+    │       │
+    │       └── resources/
+    │           ├── static/
+    │           │   ├── index.html
+    │           │   ├── habit_tracker.html
+    │           │   ├── style.css
+    │           │   ├── habit_style.css
+    │           │   ├── script.js
+    │           │   └── habit_script.js
+    │           │
+    │           └── application.properties
+    │
+    ├── target/
+    │
+    ├── pom.xml
+    │
     └── README.md
+
+
+
+
+    
+
+
     ```
 
 3.  **Run It**:
@@ -103,5 +139,6 @@ Since this project requires **no backend**, installation is instant.
 <p align="center">
   Made with ❤️ for productivity enthusiasts.
 </p>
+
 
 
