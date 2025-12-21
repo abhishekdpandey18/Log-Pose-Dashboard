@@ -68,6 +68,26 @@ Accessible via the "Habit" widget on the Dashboard, this is a dedicated applicat
 
 ---
 
+## 📸 Project Screenshots
+
+![Dashboard Preview](imgs/img.png)
+
+---
+
+## 🔗 Module Integration
+
+The project consists of two distinct modules that work seamlessly together:
+
+**Module 1: The Main Dashboard** Acts as the central command center for daily tasks, notes, and widgets.
+
+**Module 2: The Habit Tracker** A dedicated full-screen application for tracking long-term behavioral analytics.
+
+**How they are linked:** We utilized a dedicated **1x1 Widget** on the main dashboard that acts as a portal. Clicking this icon instantly opens the Habit Tracker in a new tab, maintaining a clean separation of concerns while ensuring quick navigation.
+
+| **Linkage Icon** | **Description** |
+| :---: | :--- |
+| ![Habit Link Icon](https://github.com/abhishekdpandey18/Log-Pose-Dashboard/blob/main/imgs/img10.png) | The **Habit Widget** (bottom-left corner) triggers the navigation event. |
+
 ## 🚀 Installation & Usage
 
 Since this project requires **no backend**, installation is instant.
@@ -147,6 +167,7 @@ Since this project requires **no backend**, installation is instant.
 <p align="center">
   Made with ❤️ for productivity enthusiasts.
 </p>
+
 
 
 
