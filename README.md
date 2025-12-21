@@ -60,7 +60,7 @@ Since this project requires **no backend**, installation is instant.
 
 1.  **Clone the Repository** (or download the ZIP):
     ```bash
-    git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/yourusername/your-repo-name.git)
+    git clone [https://github.com/abhishekdpandey18/Log-Pose-Dashboard](https://github.com/abhishekdpandey18/Log-Pose-Dashboard)
     ```
 
 2.  **File Structure Check**:
@@ -132,6 +132,7 @@ Since this project requires **no backend**, installation is instant.
 <p align="center">
   Made with ❤️ for productivity enthusiasts.
 </p>
+
 
 
 
