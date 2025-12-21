@@ -1,0 +1,62 @@
+/* CSS Variables for Dynamic Sizing */
+:root {
+    --sidebar-width: 320px;
+    --desc-width: 250px;
+    --habit-width: 90px;
+    --base-font-size: 14px;
+}
+
+body { font-size: var(--base-font-size); }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+.dark ::-webkit-scrollbar-thumb { background: #475569; }
+
+/* Calendar Styles - Compact Mode */
+.calendar-day { 
+    aspect-ratio: 1; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    transition: all 0.2s; 
+    font-size: 0.8em; 
+}
+.calendar-day:hover:not(.selected):not(.empty) { background-color: #f1f5f9; }
+.dark .calendar-day:hover:not(.selected):not(.empty) { background-color: #334155; }
+.calendar-day.selected { background-color: #4f46e5; color: white; font-weight: bold; }
+.calendar-day.today { border: 1px solid #4f46e5; }
+.calendar-day.empty { cursor: default; }
+
+/* Checkbox Animation */
+.checkbox-wrapper input:checked + div { transform: scale(1); }
+.checkbox-wrapper div { transform: scale(0); transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+/* Sticky Table Headers */
+thead th { position: sticky; top: 0; z-index: 20; }
+.sticky-left-col { position: sticky; left: 0; z-index: 30; }
+.sticky-desc-col { position: sticky; left: 48px; z-index: 30; } 
+
+/* Resizer Handle */
+.resizer {
+    width: 4px;
+    cursor: col-resize;
+    background: transparent;
+    transition: background 0.2s;
+    z-index: 50;
+}
+.resizer:hover, .resizer.resizing {
+    background: #6366f1; /* Indigo-500 */
+}
+
+/* Input Reset */
+.bare-input { background: transparent; border: none; outline: none; width: 100%; font-family: inherit; font-size: inherit; }
+.bare-input:focus { background: rgba(99, 102, 241, 0.05); }
+
+/* Dynamic Width Classes via Style Injection */
+.sidebar-panel { width: var(--sidebar-width); min-width: 250px; max-width: 600px; }
+.desc-col { width: var(--desc-width); min-width: 150px; }
+.habit-col { width: var(--habit-width); min-width: 60px; }

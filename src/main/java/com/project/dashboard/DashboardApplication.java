@@ -12,6 +12,6 @@ public class DashboardApplication {
     public static void main(String[] args) {
         SpringApplication.run(DashboardApplication.class, args);
         System.out.println("the Dashboard is running at http://localhost:8080");
-    }
 
+    }
 }
