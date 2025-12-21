@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Interactive 16x9 Grid Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="settings-toggle">
+        <svg viewBox="0 0 24 24"><path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61-.25-1.17-.59-1.69-.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19-.15-.24-.42-.12-.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59-1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"></path></svg>
+    </div>
+
+    <div id="settings-panel">
+        <h3>Dashboard Settings</h3>
+        
+        <div class="settings-group">
+            <label>Layout Control</label>
+            <div class="widget-visibility-manager">
+                <label><span>Lock Drag & Resize</span><input type="checkbox" id="lock-grid-toggle"></label>
+            </div>
+        </div>
+        
+        <div class="settings-group">
+            <label>Widget Visibility</label>
+            <div class="widget-visibility-manager">
+                <label><span>Greeting</span><input type="checkbox" data-widget-id="greeting-widget" checked></label>
+                <label><span>Clock</span><input type="checkbox" data-widget-id="clock-widget" checked></label>
+                <label><span>Profile Card</span><input type="checkbox" data-widget-id="profile-widget" checked></label>
+                <label><span>Image</span><input type="checkbox" data-widget-id="image-widget" checked></label>
+                <label><span>Calendar</span><input type="checkbox" data-widget-id="calendar-widget" checked></label>
+                <label><span>Notes</span><input type="checkbox" data-widget-id="notes-widget" checked></label>
+                <label><span>To-Do List</span><input type="checkbox" data-widget-id="todo-widget" checked></label>
+                <label><span>Finance Tracker</span><input type="checkbox" data-widget-id="finance-widget" checked></label>
+                <label><span>Bookmarks</span><input type="checkbox" data-widget-id="bookmarks-widget" checked></label>
+                <label><span>Focus Timer</span><input type="checkbox" data-widget-id="focus-timer-widget" checked></label>
+                <label><span>Quote of the Day</span><input type="checkbox" data-widget-id="quote-widget" checked></label>
+                <label><span>Search</span><input type="checkbox" data-widget-id="search-widget" checked></label>
+                <label><span>Quick Launch</span><input type="checkbox" data-widget-id="horizontal-dock-widget" checked></label>
+                <label><span>Side Dock</span><input type="checkbox" data-widget-id="vertical-dock-widget" checked></label>
+                <label><span>Habit Tracker</span><input type="checkbox" data-widget-id="habit-widget" checked></label>
+            </div>
+        </div>
+        <div class="settings-group">
+            <label for="font-size-slider">Font Size (<span id="font-size-value">16</span>px)</label>
+            <div class="font-slider-group">
+                <span>A</span>
+                <input type="range" id="font-size-slider" min="12" max="20" step="1" value="16">
+                <span style="font-size: 1.25em;">A</span>
+            </div>
+        </div>
+        <div class="settings-group">
+            <label for="greeting-text">Custom Greeting</label>
+            <input type="text" id="greeting-text" placeholder="e.g., Good Morning!">
+        </div>
+        <div class="settings-group">
+            <label>Background Style</label>
+            <div class="radio-group">
+                <label><input type="radio" name="bg-type" value="solid" checked> Solid</label>
+                <label><input type="radio" name="bg-type" value="gradient"> Gradient</label>
+            </div>
+        </div>
+        <div class="settings-group" id="solid-color-group">
+            <label for="solid-color">Background Color</label>
+            <input type="color" id="solid-color" value="#1a1a2e">
+        </div>
+        <div class="settings-group" id="gradient-color-group" style="display:none;">
+            <label for="gradient-color1">Gradient Color 1</label>
+            <input type="color" id="gradient-color1" value="#1a1a2e">
+            <label for="gradient-color2" style="margin-top:10px;">Gradient Color 2</label>
+            <input type="color" id="gradient-color2" value="#2a2a4a">
+        </div>
+        <div class="settings-group">
+            <label>Focus Timer (Minutes)</label>
+            <div style="display: flex; gap: 10px;">
+                <input type="number" id="focus-duration" placeholder="Focus" min="1">
+                <input type="number" id="break-duration" placeholder="Break" min="1">
+            </div>
+        </div>
+        <div class="settings-group">
+            <label for="quote-api-url">Quote API URL</label>
+            <input type="text" id="quote-api-url" placeholder="https://dummyjson.com/quotes/random">
+        </div>
+        <div class="settings-group">
+            <label for="search-url">Search URL</label>
+            <input type="text" id="search-url" placeholder="https://google.com/search?q=">
+        </div>
+        <div class="settings-group">
+            <label>Image Widget</label>
+            <input type="text" id="image-url" placeholder="Paste image URL here">
+            <label for="image-upload" style="margin-top:10px;">Or Upload</label>
+            <input type="file" id="image-upload" accept="image/*">
+        </div>
+        <div class="settings-group">
+            <label>Profile Card</label>
+            <input type="text" id="profile-name-input" placeholder="Your Name" style="margin-bottom: 8px;">
+            <input type="text" id="profile-title-input" placeholder="Your Title" style="margin-bottom: 8px;">
+            <textarea id="profile-status-input" placeholder="Your status..." rows="2" style="margin-bottom: 8px;"></textarea>
+            <input type="text" id="profile-pic-url-input" placeholder="Paste profile pic URL">
+            <label for="profile-pic-upload-input" style="margin-top:10px;">Or Upload</label>
+            <input type="file" id="profile-pic-upload-input" accept="image/*">
+        </div>
+         <div class="settings-group category-manager">
+            <label>Finance Categories</label>
+            <div>
+                <input type="text" id="new-income-cat" placeholder="New Income Category">
+                <button id="add-income-cat-btn">+</button>
+            </div>
+            <div>
+                <input type="text" id="new-expense-cat" placeholder="New Expense Category">
+                <button id="add-expense-cat-btn">+</button>
+            </div>
+        </div>
+        <div class="settings-group">
+            <label>Add to Quick Launch</label>
+            <form id="add-horizontal-dock-form" style="display: flex; flex-direction: column; gap: 8px;">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="url" name="url" placeholder="https://example.com" required>
+                <button type="submit" style="border: none; background-color: #4a4af0; color: #fff; padding: 10px; border-radius: 4px; cursor: pointer; font-weight: bold;">Add</button>
+            </form>
+        </div>
+        <div class="settings-group">
+             <label>Manage Quick Launch</label>
+             <div id="manage-horizontal-dock-list"></div>
+        </div>
+        <div class="settings-group">
+            <label>Add to Side Dock</label>
+            <form id="add-vertical-dock-form" style="display: flex; flex-direction: column; gap: 8px;">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="url" name="url" placeholder="https://example.com" required>
+                <button type="submit" style="border: none; background-color: #4a4af0; color: #fff; padding: 10px; border-radius: 4px; cursor: pointer; font-weight: bold;">Add</button>
+            </form>
+        </div>
+        <div class="settings-group">
+             <label>Manage Side Dock</label>
+             <div id="manage-vertical-dock-list"></div>
+        </div>
+    <div class="settings-group category-manager">
+            <label>Bookmark Categories</label>
+            <div>
+                <input type="text" id="new-bookmark-cat" placeholder="New Bookmark Category">
+                <button id="add-bookmark-cat-btn">+</button>
+            </div>
+        </div>
+        <div class="settings-group">
+            <label>Add New Bookmark</label>
+            <form id="add-bookmark-form" style="display: flex; flex-direction: column; gap: 8px;">
+                <input type="text" id="bookmark-name" placeholder="Bookmark Name" required>
+                <input type="url" id="bookmark-url" placeholder="https://example.com" required>
+                <select id="bookmark-category" required>
+                </select>
+                <button type="submit" style="border: none; background-color: #4a4af0; color: #fff; padding: 10px; border-radius: 4px; cursor: pointer; font-weight: bold;">Add Bookmark</button>
+            </form>
+        </div>
+        <div class="settings-group">
+            <label>Manage Bookmarks</label>
+            <div id="manage-bookmarks-list">
+            </div>
+        </div>
+        
+        <div class="settings-group">
+            <label>Data Management</label>
+            <button id="export-btn" class="settings-data-btn">Export Configuration</button>
+            <button id="import-btn" class="settings-data-btn">Import Configuration</button>
+            <input type="file" id="import-file-input" accept=".json" style="display: none;">
+        </div>
+
+        <div class="settings-group">
+            <label>Backend Tests</label>
+            <a href="/simple-servlet" target="_blank" style="color: #4a4af0; text-decoration: none; font-weight: bold;">
+                Test Java Servlet &rarr;
+            </a>
+        </div>
+        
+        <div class="settings-group">
+            <button id="reset-settings-btn">Reset All to Default</button>
+        </div>
+    </div>
+
+    <div class="grid-container" id="grid-container">
+        <div id="placeholder"></div>
+        <div class="widget" id="greeting-widget" draggable="true" data-col="2" data-row="1" data-col-span="3" data-row-span="1">
+            <div class="widget-header">GREETING</div>
+            <div class="widget-content" id="greeting-content">Hello!</div>
+            <div class="resizer"></div>
+        </div>
+        <div class="widget" id="clock-widget" draggable="true" data-col="5" data-row="1" data-col-span="3" data-row-span="2">
+            <div class="widget-header">CURRENT TIME</div>
+            <div class="widget-content">
+                <div class="flip-clock-group" id="hours"><div class="flip-digit"><span>0</span></div><div class="flip-digit"><span>0</span></div></div>
+                <div class="flip-clock-separator">:</div>
+                <div class="flip-clock-group" id="minutes"><div class="flip-digit"><span>0</span></div><div class="flip-digit"><span>0</span></div></div>
+                <div class="flip-clock-separator">:</div>
+                <div class="flip-clock-group" id="seconds"><div class="flip-digit"><span>0</span></div><div class="flip-digit"><span>0</span></div></div>
+            </div>
+            <div class="resizer"></div>
+        </div>
+        <div class="widget" id="calendar-widget" draggable="true" data-col="2" data-row="3" data-col-span="3" data-row-span="4">
+            <div class="widget-header">CALENDAR</div>
+            <div class="widget-content">
+                <div class="calendar-header">
+                    <span id="calendar-month-year"></span>
+                </div>
+                <div class="calendar-grid" id="calendar-grid"></div>
+            </div>
+            <div class="resizer"></div>
+        </div>
+        <div class="widget" id="image-widget" draggable="true" data-col="5" data-row="3" data-col-span="3" data-row-span="4">
+            <div class="widget-header">IMAGE</div>
+            <div class="widget-content">
+                <img id="display-image" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2070" alt="Display Image">
+            </div>
+            <div class="resizer"></div>
+        </div>
+        <div class="widget" id="notes-widget" draggable="true" data-col="8" data-row="1" data-col-span="5" data-row-span="3">
+             <div class="widget-header">NOTES</div>
+             <div class="widget-content" id="notes-list-container"></div>
+             <button id="add-note-btn">Add Note</button>
+            <div class="resizer"></div>
+        </div>
+        <div class="widget" id="todo-widget" draggable="true" data-col="2" data-row="7" data-col-span="7" data-row-span="3">
+            <div class="widget-header">TO-DO LIST</div>
+            <div class="todo-input-group"><input type="text" id="todo-input" placeholder="Add a new task..." /><button id="add-todo-btn">Add</button></div>
+            <div class="widget-content"><ul id="todo-list"></ul></div>
+            <div class="resizer"></div>
+        </div>
+        <div class="widget" id="finance-widget" draggable="true" data-col="8" data-row="4" data-col-span="5" data-row-span="6">
+            <div class="widget-header">FINANCE TRACKER</div>
+            <div class="widget-content">
+                <div class="finance-balance" id="finance-balance">₹0.00</div>
+                <div class="finance-summary">
+                    <div>Income<div class="finance-income-total" id="finance-income-total">₹0.00</div></div>
+                    <div>Expense<div class="finance-expense-total" id="finance-expense-total">₹0.00</div></div>
+                </div>
+                <div class="transaction-tabs">
+                    <button id="income-tab-btn" class="active">Income</button>
+                    <button id="expense-tab-btn">Expense</button>
+                </div>
+                <form id="finance-form">
+                    <input type="text" id="trans-description" placeholder="Note (optional)">
+                    <input type="number" id="trans-amount" placeholder="Amount (₹)" required>
+                    <select id="trans-category" required></select>
+                    <input type="date" id="trans-date" required>
+                    <button type="submit">Add Transaction</button>
+                </form>
+                 <div id="transaction-history"><ul></ul></div>
+            </div>
+            <div class="resizer"></div>
+        </div>
+        <div class="widget" id="profile-widget" draggable="true" data-col="13" data-row="1" data-col-span="4" data-row-span="3">
+             <div class="widget-header">PROFILE CARD</div>
+             <div class="widget-content">
+                 <img id="profile-pic-display" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=2080" alt="User Profile Picture" class="profile-pic">
+                 <div class="profile-info">
+                     <h4 id="profile-name-display">Alex Mercer</h4>
+                     <p id="profile-title-display" class="profile-title">Lead Developer</p>
+                     <p id="profile-status-display" class="profile-status">Building the future, one line of code at a time. 🚀</p>
+                 </div>
+             </div>
+             <div class="resizer"></div>
+        </div>
+        <div class="widget" id="bookmarks-widget" draggable="true" data-col="13" data-row="4" data-col-span="4" data-row-span="3">
+            <div class="widget-header">BOOKMARKS</div>
+            <div class="widget-content" id="bookmarks-container">
+            </div>
+            <div class="resizer"></div>
+        </div>
+        <div class="widget" id="focus-timer-widget" draggable="true" data-col="14" data-row="7" data-col-span="3" data-row-span="3">
+            <div class="widget-header">FOCUS TIMER</div>
+            <div class="widget-content">
+                <div class="timer-display">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="timer-track" cx="50" cy="50" r="45"></circle>
+                        <circle class="timer-progress" cx="50" cy="50" r="45"></circle>
+                    </svg>
+                    <div class="timer-text-group">
+                        <div id="timer-time">25:00</div>
+                        <div id="timer-session">Focus</div>
+                    </div>
+                </div>
+                <div class="timer-controls">
+                    <button id="timer-start-pause">Start</button>
+                    <button id="timer-reset">Reset</button>
+                </div>
+                 <audio id="timer-sound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_7524f8d663.mp3" style="display: none;"></audio>
+            </div>
+            <div class="resizer"></div>
+        </div>
+         <div class="widget" id="quote-widget" draggable="true" data-col="2" data-row="2" data-col-span="3" data-row-span="1">
+            <div class="widget-header">QUOTE OF THE DAY<button id="refresh-quote-btn" title="New Quote">🔄</button></div>
+            <div class="widget-content">
+                <p id="quote-text">Loading...</p>
+                <p id="quote-author"></p>
+            </div>
+            <div class="resizer"></div>
+        </div>
+        <div class="widget" id="search-widget" draggable="true" data-col="9" data-row="7" data-col-span="5" data-row-span="1">
+            <div class="widget-header">SEARCH</div>
+            <div class="widget-content">
+                <form id="search-form">
+                    <input type="text" placeholder="Search..." id="search-input">
+                    <button type="submit">Go</button>
+                </form>
+            </div>
+            <div class="resizer"></div>
+        </div>
+         <div class="widget" id="horizontal-dock-widget" draggable="true" data-col="9" data-row="8" data-col-span="5" data-row-span="1">
+            <div class="widget-content horizontal-dock-container"></div>
+            <div class="resizer"></div>
+        </div>
+        <div class="widget" id="vertical-dock-widget" draggable="true" data-col="1" data-row="1" data-col-span="1" data-row-span="6">
+            <div class="widget-content vertical-dock-container"></div>
+            <div class="resizer"></div>
+        </div>
+
+        <div class="widget" id="habit-widget" draggable="true" data-col="1" data-row="7" data-col-span="1" data-row-span="1" title="Open Habit Tracker">
+            <div class="widget-header" style="display:none">HABIT</div>
+            <div class="widget-content">
+                <a href="habit_tracker.html" target="_blank">
+                    <div class="habit-logo">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M9 11.5l-2-2L5.6 11l3.4 3.5L18.4 5.6 16.9 4.1zM3 5h2v14H3z" />
+                        </svg>
+                    </div>
+                    <div class="habit-label">Habits</div>
+                </a>
+            </div>
+            <div class="resizer"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
